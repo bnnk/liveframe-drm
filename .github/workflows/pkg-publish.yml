@@ -3,7 +3,7 @@
 
 name: Node.js Package
 
-on: [push, workflow_dispatch, workflow_run, workflow_call]
+on: [push, workflow_dispatch, workflow_call]
 
 jobs:
   build:
