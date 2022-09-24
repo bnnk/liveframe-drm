@@ -24,9 +24,9 @@ jobs:
         run: yarn tsc && yarn webpack build
         
       - name: Publish to Yarn
-        run: yarn publish
+        run: yarn config set npmAuthToken $NPM_AUTH_TOKEN && yarn publish
         env:
-           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+           NPM_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Pack Built Code
         # You may pin to the exact commit or the version.
         # uses: a7ul/tar-action@6b2b13625a2e286a0a04950810139961bf8ce00d
