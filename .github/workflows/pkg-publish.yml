@@ -37,7 +37,7 @@ jobs:
           # c = compress
           command: c
           # List of files or folders to archive
-          files: dist/*
+          files: dist/
           # Path of the output archive (ex: abc.tar.gz)
           outPath: LiveFrame-DRM.pkg.tgz
       - name: Upload as Build Artifact
