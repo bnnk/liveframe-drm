@@ -19,13 +19,13 @@ jobs:
         run: yarn
         
       - name: Build TypeScript to JS & .d.ts files
-        run: yarn tsc && yarn webpack dev
+        run: yarn tsc && yarn webpack build
         
       - name: Publish to Yarn
         run: yarn publish
         env:
            NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Pack Code
+      - name: Pack Built Code
         # You may pin to the exact commit or the version.
         # uses: a7ul/tar-action@6b2b13625a2e286a0a04950810139961bf8ce00d
         uses: a7ul/tar-action@v1.1.0
