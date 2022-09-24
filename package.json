@@ -1,18 +1,18 @@
 {
   "name": "@bnnk/liveframe-drm",
-  "version": "2.0.1",
-  "description": "",
+  "version": "2.0.2",
+  "description": "A Simple yet elegant DRM for IFrames.",
   "main": "dist/index.js",
   "keywords": [],
   "types": "dist/index.d.ts",
   "files": [
-    "/dist"
+    "dist/**/*"
   ],
   "repository": {
     "type": "git",
     "url": "https://github.com/bnnk/liveframe-drm.git"
   },
-  "author": "",
+  "author": "BK Shrinandhan",
   "license": "ISC",
   "scripts": {
     "clean": "rm dist/bundle.js",
