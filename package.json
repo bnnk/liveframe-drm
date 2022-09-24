@@ -8,6 +8,10 @@
   "files": [
     "/dist"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bnnk/liveframe-drm.git"
+  },
   "author": "",
   "license": "ISC",
   "scripts": {
