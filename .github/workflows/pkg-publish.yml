@@ -16,6 +16,7 @@ jobs:
           node-version: 16.x
           registry-url: https://npm.pkg.github.com
           always-auth: true
+          scope: "@bnnk"
       - name: Install deps
         run: yarn
         
