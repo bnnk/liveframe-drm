@@ -24,7 +24,7 @@ jobs:
         run: yarn tsc && yarn webpack build
         
       - name: Publish to Yarn
-        run: yarn config set npmAuthToken "$NPM_AUTH_TOKEN" && yarn publish --registry "$NPM_REGST"
+        run: yarn config set npmAuthToken "$NPM_AUTH_TOKEN" && yarn publish --registry "$NPM_REGST" --access public
         env:
            NPM_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
            NPM_REGST: https://npm.pkg.github.com
