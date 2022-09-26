@@ -1,9 +1,9 @@
-import EventEmitter2 from "eventemitter2";
+import CashDOM from "cash-dom";
+import { EventEmitter2 } from "eventemitter2";
 import { 
     IDRMProvider, IErrorElement, ILFrameDRM, 
     ILFrameDRMProps, IStatePages
 } from "./LiveFrameTypes";
-import CashDOM from "cash-dom";
 import { 
     JSONRPCClient, JSONRPCErrorException, JSONRPCErrorResponse, 
     JSONRPCServer, JSONRPCServerAndClient

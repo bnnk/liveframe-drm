@@ -1,5 +1,7 @@
 const webpack = require('webpack');
 const path = require('path');
+const DashboardPlugin = require("webpack-dashboard/plugin");
+
 
 const config = {
   entry: './src/index.ts',
@@ -11,7 +13,7 @@ const config = {
     rules: [
       {
         test: /\.ts(x)?$/,
-        loader: 'ts-loader',
+        use: ['babel-loader', 'ts-loader'],
         exclude: /node_modules/
       },
       {
@@ -27,7 +29,10 @@ const config = {
       '.ts',
       '.js'
     ]
-  }
+  },
+  plugins: [
+    new DashboardPlugin()
+  ]
 };
 
 module.exports = config;
